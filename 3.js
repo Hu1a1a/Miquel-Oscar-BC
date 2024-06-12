@@ -1,48 +1,50 @@
 const Categoria = [
-    { Name: "+ TESTARUDO", Icon: "assets/icon/1.png", Dep: "asdfdsafa dsfas fasdfd das" },
-    { Name: "+ ENÉRGICO", Icon: "assets/icon/2.png", Dep: "asf fadsfas a" },
-    { Name: "+ DIVERTIDO", Icon: "assets/icon/3.png", Dep: "sadfs adfasfa fasfasd" },
-    { Name: "+ ESTRATEGA", Icon: "", Dep: "" },
-    { Name: "+ SIMPATICO", Icon: "", Dep: "" },
-    { Name: "+ APLICADO", Icon: "", Dep: "" },
-    { Name: "+ TRANQUILO", Icon: "", Dep: "" },
-    { Name: "+ OPTIMISTA", Icon: "", Dep: "" },
-    { Name: "+ CREATIVO", Icon: "", Dep: "" },
-    { Name: "+ EMPATICO", Icon: "", Dep: "" },
-    { Name: "+ GUAPO/A", Icon: "", Dep: "" },
-    { Name: "+ ASTUTO", Icon: "", Dep: "" },
-    { Name: "+ COLABORATIVO", Icon: "", Dep: "" },
-    { Name: "+ GENUINO", Icon: "", Dep: "" },
-    { Name: "+ INDISCRETO", Icon: "", Dep: "" },
-    { Name: "+ PUNTUAL", Icon: "", Dep: "" },
-    { Name: "+ EXIGENTE", Icon: "", Dep: "" },
-    { Name: "+ TACAÑO", Icon: "", Dep: "" },
-    { Name: "+ TIMIDO", Icon: "", Dep: "" },
-    { Name: "+ INDEPENDIENTE", Icon: "", Dep: "" },
-    { Name: "+ LÍDER", Icon: "", Dep: "" },
-    { Name: "+ DIPLOMATICO", Icon: "", Dep: "" },
-    { Name: "+ PRUDENTE", Icon: "", Dep: "" },
+    { Name: "+ TESTARUDO", Icon: "assets/icon/1.png", },
+    { Name: "+ ENÉRGICO", Icon: "assets/icon/2.png", },
+    { Name: "+ DIVERTIDO", Icon: "assets/icon/3.png", },
+    { Name: "+ ESTRATEGA", Icon: "assets/icon/3.png", },
+    { Name: "+ SIMPATICO", Icon: "assets/icon/3.png", },
+    { Name: "+ APLICADO", Icon: "assets/icon/3.png", },
+    { Name: "+ TRANQUILO", Icon: "assets/icon/3.png", },
+    { Name: "+ OPTIMISTA", Icon: "assets/icon/3.png", },
+    { Name: "+ CREATIVO", Icon: "assets/icon/3.png", },
+    { Name: "+ EMPATICO", Icon: "assets/icon/3.png", },
+    { Name: "+ GUAPO/A", Icon: "assets/icon/3.png", },
+    { Name: "+ ASTUTO", Icon: "assets/icon/3.png", },
+    { Name: "+ COLABORATIVO", Icon: "assets/icon/3.png", },
+    { Name: "+ GENUINO", Icon: "assets/icon/3.png", },
+    { Name: "+ INDISCRETO", Icon: "assets/icon/3.png", },
+    { Name: "+ PUNTUAL", Icon: "assets/icon/3.png", },
+    { Name: "+ EXIGENTE", Icon: "assets/icon/3.png", },
+    { Name: "+ TACAÑO", Icon: "assets/icon/3.png", },
+    { Name: "+ TIMIDO", Icon: "assets/icon/3.png", },
+    { Name: "+ INDEPENDIENTE", Icon: "assets/icon/3.png", },
+    { Name: "+ LÍDER", Icon: "assets/icon/3.png", },
+    { Name: "+ DIPLOMATICO", Icon: "assets/icon/3.png", },
+    { Name: "+ PRUDENTE", Icon: "assets/icon/3.png", },
 ]
 
 let i = -1
+const d = 12
 next()
 function next() {
-    if (Categoria.length / 3 - i - 1 > 0) {
+    if (Categoria.length / d - i - 1 > 0) {
         i++
-        for (let j = 0; j <= 2; j++) {
-            document.getElementById("icon" + (j + 1)).src = ""
-            document.getElementById("inter" + (j + 1)).src = ""
-            document.getElementById("title" + (j + 1)).innerText = ""
-            document.getElementById("dep" + (j + 1)).innerText = ""
+        let HTML = ""
+        for (let j = i * d; j <= Math.min(Categoria.length - 1, i * d + d - 1); j++) {
+            HTML +=
+                `<div class="col-3">
+            <img src="${Categoria[j].Icon}" alt>
+            <br>
+            <img src="assets/icon/inter.png" alt>
+            <br>
+            <br>
+            <h1 class="titleIcon">${Categoria[j].Name}</h1>
+            <br><br>
+            </div>`
         }
-
-        for (let j = i * 3; j <= Math.min(Categoria.length - 1, i * 3 + 2); j++) {
-            document.getElementById("icon" + (j - i * 3 + 1)).src = Categoria[j].Icon
-            document.getElementById("inter" + (j - i * 3 + 1)).src = "assets/icon/inter.png"
-            document.getElementById("title" + (j - i * 3 + 1)).innerText = Categoria[j].Name
-            document.getElementById("dep" + (j - i * 3 + 1)).innerText = Categoria[j].Dep
-        }
+        document.getElementById("categorias").innerHTML = HTML
     } else {
-        window.location.href = '4.html'
+        window.location.href = '5.html'
     }
 }

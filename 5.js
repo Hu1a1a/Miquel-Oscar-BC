@@ -2,7 +2,6 @@ const Nominados = [
     { Name: "AB-Albert", Photo: "assets/nominado/AB.png" },
     { Name: "JBS-Jordi", Photo: "assets/nominado/JBS.jpg" },
     { Name: "MDC-Mireia", Photo: "assets/nominado/MDC.jpg" },
-    { Name: "MMG-Miquel", Photo: "assets/nominado/MMG.jpg" },
     { Name: "GFG-Gemma", Photo: "assets/nominado/GFG.png" },
     { Name: "AEY-Adrian", Photo: "assets/nominado/AEY.JPG" },
     { Name: "MXC-Marc", Photo: "assets/nominado/MXC.png" },
@@ -15,7 +14,7 @@ const Nominados = [
     { Name: "YYZ-Yang", Photo: "assets/nominado/YYZ.jpeg" },
     { Name: "KRM-Kevin", Photo: "assets/nominado/KRM.jpg" },
     { Name: "MPC-Marc Petit", Photo: "assets/nominado/MPC.JPG" },
-    { Name: "MGL-Manolo", Photo: "assets/nominado/KRM.jpg" },
+    { Name: "MGL-Manolo", Photo: "assets/nominado/MGL.jpg" },
     { Name: "LBS-Lara", Photo: "assets/nominado/LBS.jpg" },
     { Name: "JJP-Joshua", Photo: "assets/nominado/JJP.jpg" },
     { Name: "DOG-Daniel", Photo: "assets/nominado/DOG.jpg" },
@@ -26,30 +25,13 @@ const Nominados = [
 
 let HTML = ""
 for (const nominado of Nominados) {
-    HTML += `
-    <div class="nominado">
+    HTML += 
+    `<div class="nominado">
     <img src="assets/nominado/marco.png" alt class="marco">
     <img src="${nominado.Photo}" alt class="persona">
+    <br>
+    <span class="subtitle"> ${nominado.Name} </span>
     </div>`
 }
 document.getElementById("nominados").innerHTML = HTML
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

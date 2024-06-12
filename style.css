@@ -42,7 +42,7 @@ body,
 }
 
 .nominado {
-    padding: 15px;
+    padding: 20px;
     position: relative;
 }
 
@@ -56,4 +56,54 @@ body,
     margin: 10px;
     height: 120px;
     width: 120px;
+}
+
+.marco2 {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+}
+
+.persona2 {
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.caer {
+    opacity: 0;
+    animation: caer 1s cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    display: none;
+}
+
+
+@keyframes caer {
+    0% {
+        opacity: 1;
+        display: block;
+        transform: translateY(0);
+
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        transform: translateY(+10rem);
+    }
+}
+
+.ganar0 {
+    animation: ganar0 2s;
+    transform: scale(1.5);
+}
+
+@keyframes ganar0 {
+
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+
 }
