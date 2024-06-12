@@ -21,7 +21,39 @@ body,
     color: #FFF2BB;
 }
 
+.titleIcon {
+    font-size: 27px;
+    color: #FFF2BB;
+}
+
 .subtitle {
     color: #FFF2BB;
     font-size: 18px;
+}
+
+.col-4 {
+    width: 33.3333333%;
+}
+
+.nominados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nominado {
+    padding: 15px;
+    position: relative;
+}
+
+.marco {
+    position: absolute;
+    height: 140px;
+    width: 140px;
+}
+
+.persona {
+    margin: 10px;
+    height: 120px;
+    width: 120px;
 }
