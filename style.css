@@ -72,7 +72,7 @@ body,
 
 .caer {
     opacity: 0;
-    animation: caer 1s cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    animation: caer 1.5s cubic-bezier(0.310, 0.440, 0.445, 1.650);
     display: none;
 }
 
@@ -111,4 +111,22 @@ body,
 
 .IconImg {
     filter: brightness(0.7);
+    height: 130px;
+    width: auto;
+}
+
+.subir {
+    animation: subir 1.5s cubic-bezier(0.310, 0.440, 0.445, 1.650);
+}
+
+
+@keyframes subir {
+    0% {
+        transform: translateY(+10rem);
+
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

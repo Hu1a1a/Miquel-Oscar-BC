@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
-	<body onkeydown="event.key==='ArrowDown'?next():''">
+	<body onkeydown="event.key==='ArrowDown'?next(1):event.key==='ArrowUp'?next(-1):''">
 		<div class="body">
 			<img src="assets/fondo2.png"
 				class="background"
