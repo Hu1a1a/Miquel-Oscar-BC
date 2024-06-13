@@ -25,29 +25,29 @@ const Nominados = [
 ]
 
 const Categoria = [
-    { Name: "+ TESTARUDO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ ENÉRGICO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ DIVERTIDO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ ESTRATEGA", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ SIMPATICO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ APLICADO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ TRANQUILO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ OPTIMISTA", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ CREATIVO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ EMPATICO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ GUAPO/A", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ ASTUTO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ COLABORATIVO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ GENUINO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ INDISCRETO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ PUNTUAL", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ EXIGENTE", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ TACAÑO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ TIMIDO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ INDEPENDIENTE", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ LÍDER", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ DIPLOMATICO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
-    { Name: "+ PRUDENTE", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo" },
+    { Name: "+ TESTARUDO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ ENÉRGICO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ DIVERTIDO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ ESTRATEGA", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ SIMPATICO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ APLICADO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ TRANQUILO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ OPTIMISTA", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ CREATIVO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ EMPATICO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ GUAPO/A", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ ASTUTO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ COLABORATIVO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ GENUINO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ INDISCRETO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ PUNTUAL", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ EXIGENTE", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ TACAÑO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ TIMIDO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ INDEPENDIENTE", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ LÍDER", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ DIPLOMATICO", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
+    { Name: "+ PRUDENTE", Dep: "AL MAS GUAP@ DE BC?", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/media/18 Survivor - Eye of the Tiger.mp3" },
 ]
 
 let i = -1
@@ -62,6 +62,8 @@ function next() {
         if (Categoria.length - 1 > i && xxnext) {
             premio = premio.sort(() => Math.random() > 0.5 ? 1 : -1)
             i++
+            document.getElementById("music").src = Categoria[i].music
+            document.getElementById("music").play();
             let HTML = ""
             HTML +=
                 `
@@ -94,7 +96,7 @@ function next() {
             </div>
             </div>`
             document.getElementById("nominados").innerHTML = HTML
-            xxnext = false  
+            xxnext = false
             loading = false
         } else if (!xxnext) {
             const index1 = premio.findIndex((x) => x == "second")
