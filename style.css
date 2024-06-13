@@ -102,8 +102,13 @@ body,
     0% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(1.5);
     }
 
+}
+
+.IconImg {
+    filter: brightness(0.7);
 }
