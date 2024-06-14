@@ -41,13 +41,14 @@ const Categoria = [
     { Name: "+ GENUINO", Icon: "assets/ICONS/gen.png", Descripcion: "Persona auténtica y sincera, que se muestra tal como es sin fingimientos.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/" },
     { Name: "+ INDISCRETO", Icon: "assets/ICONS/indis.png", Descripcion: "Alguien que no guarda secretos ni confidencias, hablando más de lo debido.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Joey Montana - Picky.mp3" },
     { Name: "+ PUNTUAL", Icon: "assets/ICONS/punt.png", Descripcion: "Persona que respeta los horarios y llega a tiempo a compromisos y obligaciones.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Jarabe De Palo - Tiempo.mp3" },
-    { Name: "+ EXIGENTE", Icon: "assets/ICONS/exig.png", Descripcion: "Individuo que demanda alta calidad y esfuerzo, tanto de sí mismo como de los demás.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/pim pam pum tengo una pistola pim pam pum que dispara sola.wmv.mp3" },
     { Name: "+ TACAÑO", Icon: "assets/ICONS/tac.png", Descripcion: "Persona que evita gastar dinero y recursos, siendo excesivamente ahorrativa.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Abba - Money, Money, Money (Official Music Video).mp3" },
     { Name: "+ TIMIDO", Icon: "assets/ICONS/tim.png", Descripcion: "Persona reservada y con dificultades para interactuar socialmente por inseguridad.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/" },
     { Name: "+ INDEPENDIENTE", Icon: "assets/ICONS/indep.png", Descripcion: "Individuo que actúa y toma decisiones por sí mismo, sin depender de otros.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Himne de Catalunya - Himno de Cataluña - ELS SEGADORS (Lletra CAT - CAS) (Letra Catalán - Español).mp3" },
     { Name: "+ LÍDER", Icon: "assets/ICONS/lid.png", Descripcion: "Persona que guía y motiva a los demás, ejerciendo influencia y dirección.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Follow The Leader Dance.mp3" },
     { Name: "+ DIPLOMATICO", Icon: "assets/ICONS/dip.png", Descripcion: "Alguien que maneja situaciones con tacto y habilidad, evitando conflictos y ofensas.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Himno Nacional de los Estados Unidos - National Anthem of USA (ENES Letra).mp3" },
     { Name: "+ PRUDENTE", Icon: "assets/ICONS/prud.png", Descripcion: "Persona que actúa con cautela y consideración, evitando riesgos innecesarios.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Edith Piaf - Non, Je ne regrette rien.mp3" },
+    { Name: "+ VERSATIL", Icon: "assets/ICONS/prud.png", Descripcion: "Persona que actúa con cautela y consideración, evitando riesgos innecesarios.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Edith Piaf - Non, Je ne regrette rien.mp3" },
+    { Name: "+ EXIGENTE", Icon: "assets/ICONS/exig.png", Descripcion: "Individuo que demanda alta calidad y esfuerzo, tanto de sí mismo como de los demás.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/pim pam pum tengo una pistola pim pam pum que dispara sola.wmv.mp3" },
 ]
 
 let i = -1
@@ -61,7 +62,7 @@ function next(xxxx) {
     document.getElementById("music").play();
     if (!loading) {
         loading = true
-        if (!pausa && i === -1 && xxnext) {
+        if (!pausa && i > 11 && xxnext) {
             pausa = true
             document.getElementById("nominados").innerHTML = `
             <h1 class="title">
