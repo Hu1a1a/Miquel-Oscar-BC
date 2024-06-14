@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <body onkeydown="event.key==='ArrowDown'?window.location.href='7.html':event.key==='ArrowUp'?window.location.href='6.html':''">
+        <div class="body">
+            <img
+                src="assets/fondo2.png"
+                class="background"
+                alt
+            >
+            <div style="position: absolute;top: 15%;width: 80vw;height: 700px;left: calc(50% - 40vw);text-align: center;vertical-align:middle;">
+                <h1
+                    id="typedtext"
+                    class="typedtext"
+                ></h1>
+            </div>
+        </div>
+    </body>
+    <audio id="music">
+        <source
+            src="assets/media/Wiz Khalifa - See You Again ft (mp3cut.net).mp3"
+            type="audio/ogg"
+        >
+    </audio>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        type="text/javascript"
+        src="music.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="7.js"
+    ></script>
+</html>
