@@ -16,6 +16,10 @@ body,
     z-index: -9999;
 }
 
+.miquel {
+    animation: subirMiquel 4s cubic-bezier(0.34, -0.36, 0.44, 1.69);
+}
+
 .title {
     font-size: 80px;
     color: #FFF2BB;
@@ -127,6 +131,24 @@ body,
     }
 
     100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes subirMiquel {
+    0% {
+        opacity: 0;
+
+    }
+
+    40% {
+        opacity: 0;
+        transform: translateY(+10rem);
+
+    }
+
+    100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }

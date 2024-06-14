@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
-	<body onkeydown="event.key==='ArrowDown'?window.location.href='2.html':''">
+	<body onkeydown="event.key==='ArrowDown'?window.location.href='2.html':event.key==='ArrowUp'?window.location.href='0.html':''">
 		<div class="body">
 			<img src="assets/fondo.png"
 				class="background"
@@ -11,7 +11,9 @@
 				alt>
 			<img src="assets/miquel.png"
 				style="width: 250px;position: absolute;top: 10%;left: calc(50% - 125px);"
-				alt>
+				alt
+				class="miquel"
+				>
 		</div>
 	</body>
 	<audio id="music">
