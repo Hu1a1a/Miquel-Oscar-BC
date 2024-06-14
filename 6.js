@@ -30,7 +30,7 @@ const Categoria = [
     { Name: "+ DIVERTIDO", Icon: "assets/ICONS/divert.png", Descripcion: "Persona que irradia alegría y humor, siempre capaz de hacer reír a los demás.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Macarena - Original version.mp3" },
     { Name: "+ ESTRATEGA", Icon: "assets/ICONS/estrat.png", Descripcion: "Persona que planifica y ejecuta acciones con habilidad y visión a largo plazo.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Rocky Balboa - Theme Song (HD).mp3" },
     { Name: "+ SIMPATICO", Icon: "assets/ICONS/simp.png", Descripcion: "Persona amigable y agradable que genera simpatía y buenas relaciones con los demás.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "" },
-    { Name: "+ APLICADO", Icon: "assets/ICONS/apli.png", Descripcion: "Individuo que demuestra dedicación y esfuerzo constante en sus tareas y responsabilidades.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Natalia Jiménez - Quédate Con Ella (Audio).mp3" },
+    { Name: "+ APLICADO", Icon: "assets/ICONS/apli.png", Descripcion: "Individuo que demuestra dedicación y esfuerzo constante en sus tareas y responsabilidades.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/La maquina de escribir.mp3" },
     { Name: "+ TRANQUILO", Icon: "assets/ICONS/tranq.png", Descripcion: "Persona calmada y serena, que mantiene la paz interior en situaciones de estrés.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/Bruno Mars - The Lazy Song (Official Music Video).mp3" },
     { Name: "+ OPTIMISTA", Icon: "assets/ICONS/opt.png", Descripcion: "Alguien que tiene una visión positiva y esperanzadora sobre el futuro y las situaciones.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/EL Vega Life  Pa Vivirla (Videoclip)..mp3" },
     { Name: "+ CREATIVO", Icon: "assets/ICONS/creat.png", Descripcion: "Individuo que genera ideas originales e innovadoras, aportando soluciones nuevas.", first: "LBS-Lara", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/QUÉ IDEA! - PINO D'ANGIO (1981) En español.mp3" },
@@ -53,6 +53,7 @@ const Categoria = [
 let i = -1
 let xxnext = true
 let loading = false
+let pausa = false
 let premio = ["first", "second", "third"].sort((a, b) => Math.random() > 0.5 ? 1 : -1)
 
 next(1)
@@ -60,7 +61,42 @@ function next(xxxx) {
     document.getElementById("music").play();
     if (!loading) {
         loading = true
-        if (Categoria.length - 1 > i && xxnext) {
+        if (!pausa && i === -1 && xxnext) {
+            pausa = true
+            document.getElementById("nominados").innerHTML = `
+            <h1 class="title">
+            PAUSA DE 10 MIN!
+            </h1>
+            <br><br>
+            <img src='assets/media/mapex.png' style='height:60vh'>
+            `
+            setTimeout(() => {
+                document.getElementById("nominados").innerHTML = `
+                <h1 class="title">
+                PAUSA DE 10 MIN!
+                </h1>
+                <br><br>
+                <img src='assets/media/leonardo.jpeg' style='height:60vh'>
+                `
+            }, 2.5 * 60 * 1000);
+            setTimeout(() => {
+                document.getElementById("nominados").innerHTML = `
+                <h1 class="title">
+                VOLVEMOS EN
+                </h1>
+                <br><br>
+                <video src='assets/media/TEMPER.mp4' id='timer' style='height:60vh'>
+                `
+                window.onload = setInterval(xxx, 1000 / 10);
+                function xxx() {
+                    document.getElementById("timer").play();
+                    document.getElementById("timer").mute();
+                }
+            }, 4.2 * 60 * 1000);
+            document.getElementById("music").src = "assets/media/PAUSA.mp3"
+            document.getElementById("music").play();
+            loading = false
+        } else if (Categoria.length - 1 > i && xxnext) {
             premio = premio.sort(() => Math.random() > 0.5 ? 1 : -1)
             i = i + xxxx
             document.getElementById("music").src = Categoria[i].music
@@ -96,7 +132,6 @@ function next(xxxx) {
             <br>
 `
             //<h1 class="col-12 subtitle" style="margin: 100px 0"> ${Categoria[i].Descripcion} </h1>
-
             document.getElementById("nominados").innerHTML = HTML
             xxnext = false
             loading = false
