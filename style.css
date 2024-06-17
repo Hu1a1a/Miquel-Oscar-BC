@@ -1,3 +1,10 @@
+h1,
+span,
+div {
+    font-family: ui-monospace;
+}
+
+
 body,
 .body {
     height: 100%;
@@ -35,31 +42,28 @@ body,
     font-size: 18px;
 }
 
-.col-4 {
-    width: 33.3333333%;
-}
-
 .nominados {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    transform: scale(0.9);
 }
 
 .nominado {
-    padding: 20px;
+    padding: 5px 10px;
     position: relative;
 }
 
 .marco {
     position: absolute;
-    height: 140px;
-    width: 140px;
+    height: auto;
+    width: calc(9vw + 10px);
 }
 
 .persona {
-    margin: 10px;
-    height: 120px;
-    width: 120px;
+    margin: 5px;
+    height: auto;
+    width: 9vw;
 }
 
 .marco2 {
@@ -74,27 +78,7 @@ body,
     width: 200px;
 }
 
-.caer {
-    opacity: 0;
-    animation: caer 1.5s cubic-bezier(0.310, 0.440, 0.445, 1.650);
-    display: none;
-}
 
-
-@keyframes caer {
-    0% {
-        opacity: 1;
-        display: block;
-        transform: translateY(0);
-
-    }
-
-    100% {
-        opacity: 0;
-        display: none;
-        transform: translateY(+10rem);
-    }
-}
 
 .ganar0 {
     animation: ganar0 2s;
@@ -119,18 +103,25 @@ body,
     width: auto;
 }
 
-.subir {
+.subir0 {
     animation: subir 1.5s cubic-bezier(0.310, 0.440, 0.445, 1.650);
+}
+
+.subir1 {
+    animation: ocultar 1s, subir 1.5s 1s cubic-bezier(0.310, 0.440, 0.445, 1.650);
+}
+
+.subir2 {
+    animation: ocultar 2s, subir 1.5s 2s cubic-bezier(0.310, 0.440, 0.445, 1.650);
 }
 
 
 @keyframes subir {
-    0% {
+    from {
         transform: translateY(+10rem);
-
     }
 
-    100% {
+    to {
         transform: translateY(0);
     }
 }
@@ -138,12 +129,13 @@ body,
 @keyframes subirMiquel {
     0% {
         opacity: 0;
+        transform: translateY(+10rem);
 
     }
 
     40% {
         opacity: 0;
-        transform: translateY(+10rem);
+        transform: translate(20rem, 20rem);
 
     }
 
@@ -160,4 +152,44 @@ body,
     font-family: system-ui;
     font-weight: 700;
     color: lightgoldenrodyellow;
+}
+
+@keyframes ocultar {
+
+    0%,
+    99% {
+        transform: translateY(+10rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(+10rem);
+        opacity: 1;
+    }
+
+}
+
+.caer {
+    opacity: 0;
+    animation: caer 1.5s cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    display: none;
+}
+
+
+@keyframes caer {
+    0% {
+        opacity: 1;
+        display: block;
+        transform: translateY(0);
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        transform: translateY(+10rem);
+    }
 }

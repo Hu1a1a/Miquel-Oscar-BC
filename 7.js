@@ -5,7 +5,7 @@ var aText = new Array(
     "VOLEM EXPRESSAR QUE LA TEVA AJUDA I SUPORT DURANT TOTS AQUESTS ANYS HAN ESTAT FONAMENTALS PER TOTS NOSALTRES, SENSE DUBTE SEMPRE HAS MARCAT LA DIFERÈNCIA.",
     "LA TEVA DEDICACIÓ I COMPROMÍS SÓN ADMIRABLES.",
     "GRÀCIES DE TOT COR PER SER UNA PERSONA TAN VALUOSA.",
-    "UN VERITABLE PLAER TREBALLAR JUNTS."    ,);
+    "UN VERITABLE PLAER TREBALLAR JUNTS.",);
 var iSpeed = 50; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array

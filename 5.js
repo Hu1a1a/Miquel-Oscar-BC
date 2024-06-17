@@ -10,23 +10,25 @@ const Nominados = [
     { Name: "LSF-Laia", Photo: "assets/nominado/LSF.png" },
     { Name: "JCP-Jordi", Photo: "assets/nominado/JCP.JPG" },
     { Name: "AMM-Albert", Photo: "assets/nominado/AMM.JPG" },
-    { Name: "JHG-José", Photo: "assets/nominado/JHG.JPG" },
+    { Name: "JHG-Jose", Photo: "assets/nominado/JHG.JPG" },
     { Name: "YYZ-Yang", Photo: "assets/nominado/YYZ.jpeg" },
+    { Name: "NDR-Nishal", Photo: "assets/nominado/NDR.jpeg" },
     { Name: "KRM-Kevin", Photo: "assets/nominado/KRM.jpg" },
-    { Name: "MPC-Marc Petit", Photo: "assets/nominado/MPC.JPG" },
+    { Name: "MPC-Marc", Photo: "assets/nominado/MPC.JPG" },
     { Name: "MGL-Manolo", Photo: "assets/nominado/MGL.jpg" },
     { Name: "LBS-Lara", Photo: "assets/nominado/LBS.jpg" },
     { Name: "JJP-Joshua", Photo: "assets/nominado/JJP.jpg" },
     { Name: "DOG-Daniel", Photo: "assets/nominado/DOG.jpg" },
-    { Name: "ACC-Ari", Photo: "assets/nominado/ACC.jpeg" },
+    { Name: "ACC-Ariadna", Photo: "assets/nominado/ACC.jpeg" },
     { Name: "CPO-Cybele", Photo: "assets/nominado/CPO.png" },
     { Name: "SYR-Silvina", Photo: "assets/nominado/SYR.PNG" },
 ]
 
+
 let HTML = ""
 for (const nominado of Nominados) {
-    HTML += 
-    `<div class="nominado">
+    HTML +=
+        `<div class="nominado">
     <img src="assets/nominado/marco.png" alt class="marco">
     <img src="${nominado.Photo}" alt class="persona">
     <br>
