@@ -67,13 +67,14 @@ function next(xxxx) {
     document.getElementById("music").play();
     if (!loading) {
         loading = true
-        if (!pausa && i > -1 && xxnext) {
+        if (!pausa && i > 10 && xxnext) {
             if (j === 0) {
                 document.getElementById("nominados").innerHTML = `
                 <h1 class="title">
                 PAUSA DE 10 MIN!
                 </h1>
                 <br><br>
+                <div></div>
                 <img src='assets/media/mapex.png' style='height:60vh'>
                 `
                 document.getElementById("music").src = "assets/media/PAUSA0.mp3"
@@ -84,6 +85,7 @@ function next(xxxx) {
                 PAUSA DE 10 MIN!
                 </h1>
                 <br><br>
+                <div></div>
                 <img src='assets/media/leonardo.jpeg' style='height:70vh'>
                 `
                 document.getElementById("music").src = "assets/media/PAUSA1.mp3"
@@ -94,7 +96,8 @@ function next(xxxx) {
                 VOLVEMOS EN
                 </h1>
                 <br><br>
-                <video src='assets/media/TEMPER.mp4' id='timer' style='height:60vh'>
+                <div></div>
+                <video src='assets/media/TEMPER.mp4' id='timer' style='height:60vh;border-radius:15vh'>
                 `
                 document.getElementById("music").src = "assets/media/PAUSA2.mp3"
                 document.getElementById("music").play();

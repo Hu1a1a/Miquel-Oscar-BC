@@ -52,6 +52,10 @@ body,
     flex-wrap: wrap;
     justify-content: center;
     transform: scale(0.9);
+    transition: flex-grow 1000ms linear;
+    flex-grow: 1;
+
+
 }
 
 .nominado {
@@ -235,5 +239,15 @@ body,
         opacity: 0;
         display: none;
         transform: translateY(40rem);
+    }
+}
+
+@keyframes moveRadom {
+    from {
+        transform: translateY(var(--radom));
+    }
+
+    to {
+        transform: translateY(0);
     }
 }

@@ -26,14 +26,21 @@ const Nominados = [
 
 
 let HTML = ""
-for (const nominado of Nominados) {
-    HTML +=
-        `<div class="nominado">
-    <img src="assets/nominado/marco.png" alt class="marco">
-    <img src="${nominado.Photo}" alt class="persona">
-    <br>
-    <span class="subtitle"> ${nominado.Name} </span>
-    </div>`
+let i = 0
+setNominado(i)
+function setNominado() {
+    setTimeout(() => {
+        document.getElementById("nominados").innerHTML = document.getElementById("nominados").innerHTML +
+            `
+        <div class="nominado">
+        <img src="assets/nominado/marco.png" alt class="marco">
+        <img src="${Nominados[i].Photo}" alt class="persona">
+        <br>
+        <span class="subtitle"> ${Nominados[i].Name} </span>
+        </div>
+        `
+        if (i < Nominados.length - 1) setNominado(i++)
+    }, 250);
 }
-document.getElementById("nominados").innerHTML = HTML
+
 
