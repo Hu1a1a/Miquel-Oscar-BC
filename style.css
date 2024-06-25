@@ -2,6 +2,7 @@ h1,
 span,
 div {
     font-family: ui-monospace;
+
 }
 
 
@@ -30,6 +31,7 @@ body,
 .title {
     font-size: 80px;
     color: #FFF2BB;
+    text-shadow: 1px -1px #000000, -1px 1px #ffffff, 3px 4px #000000;
 }
 
 .titleIcon {
@@ -71,7 +73,8 @@ body,
 
 .persona {
     margin: 5px;
-    height: auto;
+    height: 9vw;
+    object-fit: cover;
     width: 9vw;
 }
 
@@ -85,6 +88,7 @@ body,
     margin: 10px;
     height: 200px;
     width: 200px;
+    object-fit: cover;
 }
 
 
