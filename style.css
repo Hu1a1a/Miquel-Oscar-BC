@@ -255,3 +255,37 @@ body,
         transform: translateY(0);
     }
 }
+
+.miguelCae {
+    animation: caerMiguel 6s;
+    transform: translateY(100rem);
+}
+
+@keyframes caerMiguel {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100rem);
+    }
+}
+
+.none {
+    display: none;
+}
+
+.miguelSube {
+    animation: subeMiguel 4s;
+
+}
+
+@keyframes subeMiguel {
+    from {
+        transform: translateY(100rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
