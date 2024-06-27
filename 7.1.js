@@ -1,6 +1,6 @@
 function next() {
     if (!movedown) {
-        document.getElementById("music").play();
+        document.getElementById("video").play();
         document.getElementById("miquel").classList.add("miguelCae")
         movedown = true
     } else if (!moveup) {
