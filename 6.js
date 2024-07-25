@@ -34,14 +34,14 @@ const Categoria = [
     { Name: "+TRANQUILO", Icon: "assets/ICONS/tranq.png", first: "MXC - Marc", second: "JJP - Joshua", third: "NDR - Nishal", music: "assets/categoria/Bruno Mars - The Lazy Song (Official Music Video).mp3" },
     { Name: "+OPTIMISTA", Icon: "assets/ICONS/opt.png", first: "LSF - Laia", second: "MGL - Manolo", third: "JCP - Jordi", music: "assets/categoria/EL Vega Life  Pa Vivirla (Videoclip)..mp3" },
     { Name: "+CREATIVO", Icon: "assets/ICONS/creat.png", first: "AVP - Anna", second: "MDC - Mireia", third: "NDR - Nishal", music: "assets/categoria/QUÉ IDEA! - PINO D'ANGIO (1981) En español.mp3" },
-    { Name: "+EMPATICO", Icon: "assets/ICONS/empa.png", first: "MSC - Maria", second: "KRM - Kevin", third: "MPC - Marc", music: "assets/categoria/Ricky Martin - María (Video (Spanglish) (Remastered)).mp3" },
+    { Name: "+EMPATICO", Icon: "assets/ICONS/empa.png", first: "MSC - Maria", second: "KRM - Kevin", third: "MPC - Marc", music: "assets/categoria/Ricky Martin - Un, Dos,Tres, Maria.mp3" },
     { Name: "+GUAP@", Icon: "assets/ICONS/guap.png", first: "GFG - Gemma", second: "LBS - Lara", third: "YYZ - Yang", music: "assets/categoria/La Cabra Mecanica & María Jiménez - La Lista De La Compra (Lyric).mp3" },
     { Name: "+ASTUTO", Icon: "assets/ICONS/ast.png", first: "YYZ - Yang", second: "AB - Albert", third: "AEY - Adrian", music: "assets/categoria/PSY - GANGNAM STYLE(강남스타일) MV.mp3" },
     { Name: "+COLABORATIVO", Icon: "assets/ICONS/colab.png", first: "MDC - Mireia", second: "KRM - Kevin", third: "MGL - Manolo", music: "assets/categoria/TONY RONALD - HELP (AYUDAME) (HD).mp3" },
     { Name: "+GENUINO", Icon: "assets/ICONS/gen.png", first: "LBS - Lara", second: "MSC - Maria", third: "JJP - Joshua", music: "assets/categoria/Fangoria - Espectacular (Videoclip Oficial) (mp3cut.net).mp3" },
     { Name: "+INDISCRETO", Icon: "assets/ICONS/indis.png", first: "JJP - Joshua", second: "YYZ - Yang", third: "MSC - Maria", music: "assets/categoria/Joey Montana - Picky.mp3" },
     { Name: "+PUNTUAL", Icon: "assets/ICONS/punt.png", first: "MPC - Marc", second: "DOG - Daniel", third: "MGL - Manolo", music: "assets/categoria/Jarabe De Palo - Tiempo.mp3" },
-    { Name: "+EXIGENTE", Icon: "assets/ICONS/exig.png", first: "GFG - Gemma", second: "AEY - Adrian", third: "AB - Albert", music: "assets/categoria/mix_1m12s (audio-joiner.com).mp3" },
+    { Name: "+EXIGENTE", Icon: "assets/ICONS/exig.png", first: "GFG - Gemma", second: "AEY - Adrian", third: "AB - Albert", music: "assets/categoria/Yo quiero marcha marcha.mp3" },
     { Name: "+TACAÑO", Icon: "assets/ICONS/tac.png", first: "AMM - Albert", second: "JJP - Joshua", third: "JBS - Jordi", music: "assets/categoria/Abba - Money, Money, Money (Official Music Video).mp3" },
     { Name: "+TIMIDO", Icon: "assets/ICONS/tim.png", first: "DOG - Daniel", second: "CPO - Cybele", third: "LBS - Lara", music: "assets/categoria/la cancion originanal de la pantera rosa.mp3" },
     { Name: "+INDEPENDIENTE", Icon: "assets/ICONS/indep.png", first: "JHG - Jose", second: "MXC - Marc", third: "JJP - Joshua", music: "assets/categoria/Himne de Catalunya - Himno de Cataluña - ELS SEGADORS (Lletra CAT - CAS) (Letra Catalán - Español).mp3" },
@@ -62,7 +62,9 @@ let radomExigente0
 let radomExigente1
 let radomExigente2
 let timerxxx
-next(1)
+setInterval(() => {
+    document.getElementById("music").play();
+}, 1000);
 function next(xxxx) {
     document.getElementById("music").play();
     if (!loading) {
@@ -214,6 +216,8 @@ function next(xxxx) {
                 xxnext = true
                 loading = false
             } else if (Categoria[i].Name === "+EXIGENTE") {
+                document.getElementById("music").src = "assets/categoria/pim pam pum tengo una pistola.mp3"
+                document.getElementById("music").play();
                 clearInterval(radomExigente2)
                 document.getElementsByClassName("nominado")[0].classList.remove("subir0")
                 document.getElementsByClassName("nominado")[1].classList.remove("subir1")
