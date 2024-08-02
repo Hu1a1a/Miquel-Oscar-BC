@@ -10,7 +10,7 @@ const Categoria = [
     { Name: "+CREATIVO", Icon: "assets/ICONS/creat.png", first: "AVP-Anna", second: "MDC-Mireia", third: "NDR-Nishal", music: "assets/categoria/QUÉ IDEA! - PINO D'ANGIO (1981) En español.mp3" },
     { Name: "+EMPATICO", Icon: "assets/ICONS/empa.png", first: "MSC-Maria", second: "KRM-Kevin", third: "MPC-Marc", music: "assets/categoria/Ricky Martin - María (Video (Spanglish) (Remastered)).mp3" },
     { Name: "+GUAP@", Icon: "assets/ICONS/guap.png", first: "GFG-Gemma", second: "LBS-Lara", third: "YYZ-Yang", music: "assets/categoria/La Cabra Mecanica & María Jiménez - La Lista De La Compra (Lyric).mp3" },
-    { Name: "+ASTUTO", Icon: "assets/ICONS/ast.png", first: "YYZ-Yang", second: "AB-Albert", third: "AEY-Adrian", music: "assets/categoria/PSY - GANGNAM STYLE(강남스타일) MV.mp3" },
+    { Name: "+ASTUTO", Icon: "assets/ICONS/ast.png", first: "YYZ-Yang", second: "AB-Albert", third: "AEY-Adrian", music: "assets/categoria/PSY - GANGNAM STYLE.mp3" },
     { Name: "+COLABORATIVO", Icon: "assets/ICONS/colab.png", first: "MDC-Mireia", second: "KRM-Kevin", third: "MGL-Manolo", music: "assets/categoria/TONY RONALD - HELP (AYUDAME) (HD).mp3" },
     { Name: "+GENUINO", Icon: "assets/ICONS/gen.png", first: "LBS-Lara", second: "MSC-Maria", third: "JJP-Joshua", music: "assets/categoria/Fangoria - Espectacular (Videoclip Oficial) (mp3cut.net).mp3" },
     { Name: "+INDISCRETO", Icon: "assets/ICONS/indis.png", first: "JJP-Joshua", second: "YYZ-Yang", third: "MSC-Maria", music: "assets/categoria/Joey Montana - Picky.mp3" },
